@@ -1,6 +1,7 @@
+package robdev;
 
 
-public interface MoveRoboboI {
+public interface Actions {
     
     /**
      * Robobo stop his activities for nb seconds
