@@ -10,6 +10,7 @@ public interface Actions {
     public void pause(int nbSeconds);
 
     /**
+     * Robobo move forward nb seconds
      * @param nbSeconds
      */
     public void moveForward(int nbSeconds);
