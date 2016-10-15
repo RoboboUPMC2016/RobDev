@@ -1,12 +1,12 @@
 package robdev;
 
 
-public interface Behavior extends Runnable{
+public interface Behavior{
 
     /**
      * Define your behavior in this method
-     * @param moveRobobo
+     * @param actions : contains all the actions the robot can perform
      */
-    public void run(Actions moveRobobo);
+    public void run(Actions actions);
 
 }

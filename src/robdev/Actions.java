@@ -3,29 +3,29 @@ package robdev;
 public interface Actions {
     
     /**
-     * The robot stop his activities
+     * The robot stops his activities
      */
-    public void pause();
+    public void stop();
 
     /**
-     * The robot move forward nb seconds
+     * The robot moves forward for the time in parameter
      * @param nbSeconds
      */
     public void moveForward(int nbSeconds);
 
     /**
-     * The robot move backward nb seconds
+     * The robot moves backward nb seconds
      * @param nbSeconds
      */
     public void moveBackward(int nbSeconds);
  
     /**
-     * The robot turn 90 degrees to the right
+     * The robot turns 90 degrees to the right
      */
     public void turnRight();
 
     /**
-     * The robot turn 90 degrees to the left
+     * The robot turns 90 degrees to the left
      */
     public void turnLeft();
 
