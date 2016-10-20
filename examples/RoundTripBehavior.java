@@ -1,4 +1,4 @@
-package robdev;
+import robdev.*
 
 public class RoundTripBehavior implements Behavior {
 
@@ -17,10 +17,10 @@ public class RoundTripBehavior implements Behavior {
 			actions.turnRight();
 			actions.turnRight();
 			
-			// and come back to its starting point !
+			// and comes back to its starting point !
 			actions.moveForward(3);
 			
-			if(i++ > ROUND_TRIP_NUMBER)
+			if(i++ >= ROUND_TRIP_NUMBER)
 				actions.stop();
 			
 			// Let's start again !
