@@ -2,30 +2,49 @@ package robdev;
 
 public interface Actions {
     
+	/**
+	 * To keep the robot waiting 
+	 * @param seconds
+	 */
+    public void wait(int seconds);
+    
     /**
-     * The robot stops his activities
+     * To keep the robot waiting
+     * @param event : the event 
      */
-    public void stop();
+    public void wait(Event event);
 
     /**
-     * The robot moves forward for the time in parameter
-     * @param nbSeconds
+     * To move the robot forward
+     * @param seconds
      */
-    public void moveForward(int nbSeconds);
+    public void moveForward(int seconds);
+    
+    /**
+     * To move the robot forward
+     * @param event
+     */
+    public void moveForward(Event event);
 
     /**
-     * The robot moves backward nb seconds
-     * @param nbSeconds
+     * To move the robot backward
+     * @param seconds
      */
-    public void moveBackward(int nbSeconds);
+    public void moveBackward(int seconds);
+    
+    /**
+     * To move the robot backward
+     * @param event
+     */
+    public void moveBackward(Event event);
  
     /**
-     * The robot turns 90 degrees to the right
+     * To turn the robot 90 degrees to the right
      */
     public void turnRight();
 
     /**
-     * The robot turns 90 degrees to the left
+     * To turn the robot 90 degrees to the left
      */
     public void turnLeft();
 
