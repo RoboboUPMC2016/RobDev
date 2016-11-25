@@ -1,4 +1,6 @@
-import robdev.*
+package robdev.examples;
+
+import robdev.*;
 
 public class SquareTripBehavior implements Behavior {
 
@@ -17,7 +19,6 @@ public class SquareTripBehavior implements Behavior {
 
 			if(i++ >= ROUND_TRIP_NUMBER)
 				actions.stop();
-
 		}
 	}
 

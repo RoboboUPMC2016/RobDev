@@ -1,11 +1,12 @@
 package robdev;
 
-
+/**
+ * Represents a robot behavior. Let's define your own behaviors implementing this interface !
+ */
 public interface Behavior{
 
     /**
-     * Define your behavior in this method
-     * @param actions : contains all the actions the robot can perform
+     * @param actions : a library containing all the actions the robot can perform
      */
     public void run(Actions actions);
 

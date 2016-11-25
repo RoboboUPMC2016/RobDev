@@ -1,4 +1,6 @@
-import robdev.*
+package robdev.examples;
+
+import robdev.*;
 
 public class RoundTripBehavior implements Behavior {
 
