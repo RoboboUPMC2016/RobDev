@@ -56,5 +56,7 @@ public interface Actions {
 	 * Stops instantly the robot behavior
 	 */
 	public void stop();
+	
+	public void when(Events event, Runnable function);
 
 }
