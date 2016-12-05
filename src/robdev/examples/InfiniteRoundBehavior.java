@@ -4,15 +4,16 @@ import robdev.*;
 
 public class InfiniteRoundBehavior implements Behavior{
 
-	public void run(Actions actions) {
+	@Override
+	public void run(Action action, Event event) {
 
 		do{
 
 			// The robot will moves forward until a shock is detected,
-			actions.moveForward(Events.SHOCK_DETECTED);
+			action.moveForward(Event.SHOCK_DETECTED);
 
 			// then it performs the opposite way
-			actions.moveBackward(Events.SHOCK_DETECTED);
+			action.moveBackward(Event.SHOCK_DETECTED);
 
 		}while(true); // and starts again for the rest of its life !
 

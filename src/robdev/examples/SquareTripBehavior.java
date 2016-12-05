@@ -6,7 +6,7 @@ public class SquareTripBehavior implements Behavior {
 
 	public static final int ROUND_TRIP_NUMBER = 5;
 
-	public void run(Actions actions) {
+	public void run(Action actions,Event event) {
 
 		int i = 0;
 

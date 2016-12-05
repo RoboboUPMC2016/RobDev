@@ -1,23 +1,21 @@
 package robdev.examples;
 
-import robdev.Actions;
-import robdev.Behavior;
-import robdev.Events;
+import robdev.*;
 
 public class UnstoppableBehavior implements Behavior{
 
-	public void run(final Actions actions) {
+	public void run(final Action action,final Event event) {
 
 		// define how to handle a shock
-		actions.when(Events.SHOCK_DETECTED, () -> { avoidObstacle(actions); });
+		event.when(Event.SHOCK_DETECTED, () -> { avoidObstacle(action); });
 
 		while(true)
-			actions.moveForward(1);
+			action.moveForward(1);
 
 	}
 
-	private void avoidObstacle(Actions actions){
-		actions.turnLeft();
+	private void avoidObstacle(Actions action){
+		action.turnLeft();
 	}
 
 }

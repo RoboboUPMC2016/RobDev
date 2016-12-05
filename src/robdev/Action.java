@@ -1,10 +1,10 @@
 package robdev;
 
 /** 
- * An instance of the class {@link Actions} provides useful methods to 
- * create amazing robot behaviors.
+ * An instance of the class {@link Action} provides useful methods to 
+ * animate or actionate amazing robot behaviors.
  */
-public interface Actions {
+public interface Action {
 
 	/**
 	 * Keeps the robot waiting for a while
@@ -16,7 +16,7 @@ public interface Actions {
 	 * Keeps the robot waiting for a while
 	 * @param event : an event to wait to resume the behavior
 	 */
-	public void wait(Events event);
+	public void wait(Event event);
 
 	/**
 	 * Moves the robot forward
@@ -28,7 +28,7 @@ public interface Actions {
 	 * Moves the robot forward
 	 * @param event : an event to wait to go on the next step
 	 */
-	public void moveForward(Events event);
+	public void moveForward(Event event);
 
 	/**
 	 * Moves the robot backward
@@ -40,7 +40,7 @@ public interface Actions {
 	 * Moves the robot backward
 	 * @param event : an event to wait to go on the next step
 	 */
-	public void moveBackward(Events event);
+	public void moveBackward(Event event);
 
 	/**
 	 * Turns the robot for 90 degrees to the right
@@ -57,6 +57,6 @@ public interface Actions {
 	 */
 	public void stop();
 	
-	public void when(Events event, Runnable function);
+	public void when(Event event, Runnable function);
 
 }
