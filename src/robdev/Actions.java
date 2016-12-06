@@ -57,4 +57,12 @@ public interface Actions {
 	 */
 	public void stop();
 
+	/**
+	 * Set the rob emotion 
+	 * 
+	 */
+	public void setEmotion(Emotion e);
+	
+	public void speak(String text);
+	
 }
