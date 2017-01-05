@@ -9,12 +9,14 @@ public enum Event {
 	 * A shock is detected, the robot has probably met an obstacle, or a foot kick ...
 	 */
 	SHOCK_DETECTED,
+	
 	/**
-	 * Something is detected with the front IR captor
+	 * Something is detected by the front infrared sensor
 	 */
 	IRFRONT,
+	
 	/**
-	 * Something is detected with the back IR captor
+	 * Something is detected by the back infrared sensor
 	 */
 	IRBACK
 	

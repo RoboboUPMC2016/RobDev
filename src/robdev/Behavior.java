@@ -9,6 +9,6 @@ public interface Behavior{
      * @param actions : a library containing all the actions the robot can perform
      * @see Event
      */
-    public void run(Actions actions);
+    public void run(final Actions actions);
 
 }
