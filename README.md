@@ -9,6 +9,8 @@ To download directly the compressed .jar of the framework, [Click Here](https://
 ## Example
 
 ```java
+import robdev.*;
+
 public class RoundTripBehavior implements Behavior {
 
 	private static final int ROUND_TRIP_NUMBER = 5;
